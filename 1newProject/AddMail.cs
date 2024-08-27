@@ -7,15 +7,12 @@ using System.Threading.Tasks;
 
 namespace _1newProject
 {
-    public class AddMail
+    public class AddAge
     {
-        public void AddUserMail(UserModel.ReturnData userModelReturn)
+        public UserModel.ReturnData AddUserAge(UserModel.ReturnData returnData)
         {
-            userModelReturn.Mail = "kayhan1901@gmail.com";
-
-           AddAge addAge = new AddAge();
-           addAge.AddUserAge(userModelReturn);
-
+            returnData.Age = 24;
+            return returnData;
         }
     }
 }
